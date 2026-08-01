@@ -8,3 +8,4 @@ docker stop simplepythonapp || true
 # Delete the container
 docker rm simplepythonapp || true
 
+
