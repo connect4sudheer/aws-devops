@@ -5,7 +5,7 @@ env:
   variables:
     DOCKER_IMAGE: "simple-python-app"
   parameter-store:
-    DOCKER_REGISTRY_URL: /simplepythonapp/docker-registry/url
+    DOCKER_REGISTRY_URL: /simplepythonapp/docker-repository/url
     DOCKER_USERNAME: /simplepythonapp/docker-credential/user
     DOCKER_PASSWORD: /simplepythonapp/docker-credential/password
 
