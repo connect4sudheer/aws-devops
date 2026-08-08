@@ -7,7 +7,6 @@ env:
     DOCKER_USERNAME: /simplepythonapp/docker-credential/user
     DOCKER_PASSWORD: /simplepythonapp/docker-credential/password
 
-
 phases:
   install:
     runtime-versions:
