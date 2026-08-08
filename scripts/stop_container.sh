@@ -1,12 +1,13 @@
 #!/bin/sh
-
 set -x
 
-# Stop the container
-docker stop simplepythonapp || true
+# Stop and remove existing container if running
+CONTAINER_ID=$(docker ps -q -f name=simplepythonapp)
+if [ -n "$CONTAINER_ID" ]; then
+    docker stop simplepythonapp
+fi
 
-# Delete the container
-docker rm simplepythonapp || true
-
-
-
+CONTAINER_EXISTS=$(docker ps -a -q -f name=simplepythonapp)
+if [ -n "$CONTAINER_EXISTS" ]; then
+    docker rm simplepythonapp
+fi
