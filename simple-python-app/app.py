@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return 'Hello, world! Good Afternoon. This is first pipline testing'
+    return 'Hello, world! Good Afternoon. This is second pipline testing'
 
 
 if __name__ == '__main__':
